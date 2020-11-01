@@ -3,6 +3,11 @@
 I selfishly created this cheat sheet for myself after trying to learn git for the _third_ time. You would think that I would have learned my lesson after the first time, however, I prefer to learn lessons the hard and expensive way. I figure that in the future, if I need help remembering what I spent several painstaking hours to learn it would be in my best interest to document my findings. Hopefully, someone else out there finds this useful as well. :metal:
 
 ## Setup
+First off, make sure that you download git. You can either use git as a standalone package or you may use it in tandem with Bitbucket or Github. Choose your flavor. I favor the Git/Github variety.
+
+In order to track changes, you need to configure your git credentials. That way, when changes are committed, you can refer to the git log to see the who, when, and what regarding each of the changes.
+
+For a more extensive tutorial, a buddy of mine recommended [this one](https://gitimmersion.com/index.html). Let's just say I trust this man with my life so you can at least trust his judgement.
 ```
 git config --global user.name "full name"
 git config --global user.email "email"
@@ -12,8 +17,7 @@ git config --global core.excludesfile [file]
 ### Do's and Don'ts
 Do | Absolutely Do Not
 ------------ | -------------
-tip 1 | tip 1
-tip 2 | tip 2
+coming soon!
 
 ### Admin
 ```
@@ -131,3 +135,6 @@ git remote rm <alias>
 
 ## Questions or Comments?
 This is a resource not only for me, but for you! If there is anything else that you think should be in here let me know.
+
+## Level Up :video_game::sparkles:
+Once you've mastered the basics of git yourself, you can learn how to transfer the knowledge into your workflow. I highly recommend this [team toolkit](github-teamwork-toolkit) that was created by my friend @emiton.
