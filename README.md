@@ -44,6 +44,7 @@ git branch -r --- List or delete (if used with -d) the remote-tracking branches.
            --list to match the optional pattern(s)
 git branch <branch-name> --- create new branch at the current commit
 git checkout <branch-name> --- switch to and create a new branch out of the working directory
+git push --set-upstream <alias> <branch-name> --- add that branch to repository
 ```
 Stage the changes that you just made so you update the repo
 ```
