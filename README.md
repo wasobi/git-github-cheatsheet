@@ -126,8 +126,8 @@ git remote rm <alias>
  
 ## Up Next...
 - [ ] add a repository
-- [ ] add a branch
-- [ ] merge branches
+- [x] add a branch
+- [x] merge branches
 - [ ] quick tips
 - [ ] beginner's checklist
 - [ ] helpful videos
