@@ -17,6 +17,11 @@ Make it look pretty :sparkles: The following command will enable the syntax colo
 ```
 git config --global color.ui true
 ```
+If you're using zsh you would like to turn off the default branch listing used by git, enter the following command.
+NOTE: If you choose to keep the default branch listing, then you can exit by typing in __-F__ then __return__
+```
+git config --global pager.branch false
+```
 
 ## Basics
 ### Admin
