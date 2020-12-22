@@ -143,4 +143,4 @@ git remote rm <alias>
 This is a resource not only for me, but for you! If there is anything else that you think should be in here let me know.
 
 ## Level Up :video_game::sparkles:
-Once you've mastered the basics of git yourself, you can learn how to transfer the knowledge into your workflow. I highly recommend this [team toolkit](github-teamwork-toolkit) that was created by my friend @emiton.
+Once you've mastered the basics of git yourself, you can learn how to transfer the knowledge into your workflow. I highly recommend this [team toolkit](github-teamwork-toolkit) that was created by my friend [@emiton](https://github.com/Emiton).
