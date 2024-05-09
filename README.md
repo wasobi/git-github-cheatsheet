@@ -8,6 +8,7 @@ For a more extensive tutorial, a buddy of mine recommended [this one](https://gi
 First off, make sure that you download git. You can either use git as a standalone package or you may use it in tandem with Bitbucket or Github. Choose your flavor. I favor the Git/Github variety. I am not here to recreate the wheel. A simple search on the web will return hundreds of resources that will walk you through git installation. I use __brew__ to download packages to my machine. Again, the way you do it will be up to you! 
 
 Second, you need to configure your git credentials so you can begin to track changes, . That way, when changes are committed, you can refer to the git log to see the who, when, and what regarding each of the changes.
+
 ```
 git config --global user.name "full name"
 git config --global user.email "email"
@@ -30,7 +31,7 @@ Display all modified files in the working directory that are staged for the next
 git status
 ```
 ### git log 
-This command and all of its variations are useful commands that let you display information about your branches
+_This command and all of its variations are useful commands that let you display information about your branches_
 
 Show all commits in the active branch
 ```
