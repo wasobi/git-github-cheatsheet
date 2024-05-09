@@ -25,12 +25,19 @@ git config --global pager.branch false
 
 ## Basics
 ### Admin
+Display all modified files in the working directory that are staged for the next commit
 ```
-git status --- display all modified files in the working directory that are staged for the next commit
+git status
 ```
+git log and all of its variations are useful commands that lets you display information about your branches
+
+Show all commits in the active branch
 ```
-git log --- show all commits in the active branch
-git log --stat -M --- display the commit logs, including any paths that may have been removed
+git log ---
+```
+display the commit logs, including any paths that may have been removed
+```
+git log --stat -M
 ```
 
 ### Get Started
@@ -69,26 +76,42 @@ git remote show <alias> --- is output will contain a list of branches associated
 git remote rename <old-name> <new-name> -- Remove the connection to the remote repository called
 git remote set-branches --add <name> <branch> --- Changes the list of branches tracked by the named remote
 ```
-Make the changes that you have made locally available elsewhere
+git push gives you the power to make the changes that you have made locally available elsewhere
+
+Transmit local branch commits to the remote repository branch
 ```
-git push <alias> <branch> --- transmit local branch commits to the remote repository branch
-git push -u <GitHub-url> --- transmit commits to the current branch?
+git push <alias> <branch>
 ```
-Keep yourself (and your branch) up to speed and copy the changes
+Transmit commits to the current branch
 ```
-git pull <remote> --- Fetch the specified remote’s copy of current branch and
-immediately copy it into the local repository
+git push -u <GitHub-url>
 ```
-Check to see if you're up-to-date
+git pull Keep yourself (and your branch) up to speed and copy the changes
+
+Fetch the specified remote’s copy of current branch and immediately copy it into the local repository
 ```
-git fetch <alias> --- retrieve changes from upstream from the Git remote, without the copying
-git fetch <remote> <branch> --- Fetches a specific <branch>, from the repo. Leave off <branch>
+git pull <remote>
+```
+git fetch allows you to check to see if you're up-to-date
+
+Retrieve changes from upstream from the Git remote, without the copying
+```
+git fetch <alias> --- 
+```
+Fetches a specific <branch>, from the repo. Leave off <branch>
+```
+git fetch <remote> <branch>
 to fetch all remote refs
 ```
-Combine branches that you were working on
+git merge allows you to combine branches that you were working on
+
+Merge the current branch with the one indicated in the call
 ```
-git merge <branch-name> --- merge the current branch with the one indicated in the call
-git merge <alias>/<branch-name> --- merge a remote branch into the active branch to bring it up to date
+git merge <branch-name>
+```
+Merge a remote branch into the active branch to bring it up to date
+```
+git merge <alias>/<branch-name>
 ```
 Compare differences in code that you've made changes to and what has been committed
 ```
