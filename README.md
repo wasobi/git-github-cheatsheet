@@ -24,23 +24,24 @@ git config --global pager.branch false
 ```
 
 ## Basics
-### Admin
+### git status
 Display all modified files in the working directory that are staged for the next commit
 ```
 git status
 ```
-git log and all of its variations are useful commands that lets you display information about your branches
+### git log 
+This command and all of its variations are useful commands that lets you display information about your branches
 
 Show all commits in the active branch
 ```
-git log ---
+git log
 ```
-display the commit logs, including any paths that may have been removed
+Display the commit logs, including any paths that may have been removed
 ```
 git log --stat -M
 ```
 
-### Get Started
+## Get Started
 Start using git to start tracking a local repository
 ```
 git init --- start watching a new repo in an already existing directory
@@ -58,12 +59,18 @@ git branch <branch-name> --- create new branch at the current commit
 git checkout <branch-name> --- switch to and create a new branch out of the working directory
 git push --set-upstream <alias> <branch-name> --- add that branch to repository
 ```
-Stage the changes that you just made so you update the repo
+### git add 
+Allows you to stage the changes that you just made so you update the repo
+
+Add a file to the repo
 ```
-git add <file-name> --- add a file to the repo
-git add . --- add all new files in the current directory to repo
+git add <file-name>
 ```
-Save those changes baby!
+Add all new files in the current directory to repo
+```
+git add .
+```
+Let's commit those changes baby!
 ```
 git commit -m "message goes here" --- commit changes to the branch
 ```
