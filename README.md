@@ -74,16 +74,35 @@ Let's commit those changes baby!
 ```
 git commit -m "message goes here" --- commit changes to the branch
 ```
+### git remote
 Let's bridge the gap between the local repos and the ones that you have on Github
+
+Display all of the git remotes for the repo
 ```
-git remote --- display all of the git remotes for the repo
-git remote -v --- display the status of all remotes for the repo
+git remote
+```
+Display the status of all remotes for the repo
+```
+git remote -v
+```
+Add an alias to a remote repository
+```
 git remote add <alias> <GitHub-url>
-git remote show <alias> --- is output will contain a list of branches associated with the remote and also the endpoints attached for fetching and pushing
-git remote rename <old-name> <new-name> -- Remove the connection to the remote repository called
-git remote set-branches --add <name> <branch> --- Changes the list of branches tracked by the named remote
 ```
-git push gives you the power to make the changes that you have made locally available elsewhere
+A list of branches associated with the remote and also the endpoints attached for fetching and pushing
+```
+git remote show <alias>
+```
+Remove the connection to the remote repository called
+```
+git remote rename <old-name> <new-name>
+```
+Changes the list of branches tracked by the named remote
+```
+git remote set-branches --add <name> <branch>
+```
+### git push
+Gives you the power to make the changes that you have made locally available elsewhere
 
 Transmit local branch commits to the remote repository branch
 ```
@@ -93,13 +112,15 @@ Transmit commits to the current branch
 ```
 git push -u <GitHub-url>
 ```
-git pull Keep yourself (and your branch) up to speed and copy the changes
+### git pull
+Keep yourself (and your branch) up to speed and copy the changes
 
 Fetch the specified remote’s copy of current branch and immediately copy it into the local repository
 ```
 git pull <remote>
 ```
-git fetch allows you to check to see if you're up-to-date
+### git fetch
+Allows you to check to see if you're up-to-date
 
 Retrieve changes from upstream from the Git remote, without the copying
 ```
@@ -120,12 +141,24 @@ Merge a remote branch into the active branch to bring it up to date
 ```
 git merge <alias>/<branch-name>
 ```
+### git diff
 Compare differences in code that you've made changes to and what has been committed
+
+Display what has been updated but not added
 ```
-git diff --- display what has been updated but not added
-git diff --stages --- display what is updated but not staged
-git diff HEAD --- Show difference between working directory and last commit.
-git diff --cached --- Show difference between staged changes and last commit
+git diff
+```
+Display what is updated but not staged
+```
+git diff --stages
+```
+Show difference between working directory and last commit
+```
+git diff HEAD
+```
+Show difference between staged changes and last commit
+```
+git diff --cached
 ```
 Made a mistake? Have no fear, not all hope is lost (yet)
 ```
