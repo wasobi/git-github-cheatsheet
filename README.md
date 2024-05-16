@@ -252,7 +252,10 @@ So now you know the basics, what the heck can you actually do with all you've ju
 1. Add specific files to the repo OR add all of the changes to the repo --- `git add [file/s]` OR `git add .`
 2. Commit and add a short descriptive message --- `git commit -m "Meaningful text goes here"`
 3. Send the changes from your local repo to the remote --- `git push <alias> <branch-name>` or `git push -u <alias>`
- 
+
+# Resources
+- Guide to Fixing Mistakes: [Dangit, Git](https://dangitgit.com/en)
+
 ## Up Next...
 - [ ] Workflow: add a repository
 - [x] add a branch
@@ -260,7 +263,7 @@ So now you know the basics, what the heck can you actually do with all you've ju
 - [x] quick tips
 - [ ] helpful videos
 - [ ] vocabulary (alias, branch, commit, remote, local, repo)
-- [ ] useful tags
+- [ ] resources
 
 ## Questions or Comments?
 This is a resource not only for me but for you! If there is anything else that you think should be in here let me know. Feel free to raise an issue.
