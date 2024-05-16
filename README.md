@@ -1,8 +1,8 @@
 # Git/Github Cheat Sheet for For Slow Learners
 
-I selfishly created this cheat sheet for myself after trying to learn git for the _third_ time. You would think that I would have learned my lesson after the first time. Nope, history has proven that I prefer to learn lessons in a hard and expensive way. I figure that in the future, if I need help remembering what I spent several painstaking hours to learn it would be in my best interest to document my findings. Hopefully, someone else out there finds this useful as well. :metal:
+I selfishly created this cheat sheet for myself after trying to learn git for the _third_ time. I figure that in the future, if I need help remembering what I spent several painstaking hours to learn it would be in my best interest to document my findings. Hopefully, someone else out there finds this useful as well. :metal:
 
-For a more extensive tutorial, a buddy of mine recommended [this one](https://gitimmersion.com/index.html). Let's just say I trust this man with my life, so you can at least trust his judgment.
+For a tutorial, a buddy of mine recommended [this one](https://gitimmersion.com/index.html). Let's just say I trust this man with my life, so you can at least trust his judgment.
 
 ## Setup
 __1. Download git and choose your version control software.__ Grab the latest Git distribution from [their website](https://git-scm.com/). If you're on MacOS, you can use [brew](https://github.com/Homebrew) to download packages to your machine like I did. I am not here to recreate the wheel. A simple search on the web will return hundreds of resources that will walk you through git installation. Again, the way you do it will be up to you!
