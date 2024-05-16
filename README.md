@@ -22,16 +22,17 @@ The following command will enable the syntax coloring for git.
 git config --global color.ui true
 ```
 If you're using `zsh` and you would like to turn off the default branch listing used by git, enter the following command.
-NOTE: If you choose to keep the default branch listing, then you can exit by typing in `-F` then `return`
 ```
 git config --global pager.branch false
 ```
+__NOTE__: If you choose to keep the default branch listing, then you can exit by typing in `-F` then `return`
 ## Get Started
 ### git init
 _Start using git to start tracking a local repository and connect it to a remote repository in the future._
 
 Start watching a new repo in an already existing directory
-NOTE: Execute this command once you have used `cd` to navigate into the directory.
+
+__NOTE__: Execute this command once you have used `cd` to navigate into the directory.
 ```
 git init
 ```
@@ -220,13 +221,14 @@ Create a new commit that undoes all of the changes made in <commit>, then apply 
 git revert <commit>
 ```
 Remove <file> from the staging area, but leave the working directory unchanged
-NOTE: This will unstage a file without overwriting any changes.
 ```
 git reset <file>
 ```
+__NOTE__: This will unstage a file without overwriting any changes.
 ### git clean
 _Shows which files would be removed from the working directory._
-NOTE: Use the `-f` flag in place of the `-n` flag to execute the clean
+
+__NOTE__: Use the `-f` flag in place of the `-n` flag to execute the clean
 ```
 # Run a test run
 git clean -n
