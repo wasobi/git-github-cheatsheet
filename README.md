@@ -7,7 +7,7 @@ For a tutorial, a buddy of mine recommended [this one](https://gitimmersion.com/
 ## Setup
 __1. Download git and choose your version control software.__ Grab the latest Git distribution from [their website](https://git-scm.com/). If you're on MacOS, you can use [brew](https://github.com/Homebrew) to download packages to your machine like I did. I am not here to recreate the wheel. A simple search on the web will return hundreds of resources that will walk you through git installation. Again, the way you do it will be up to you!
 
-One of the beautiful things about Git is that you can either use it as a standalone package or you may use it in tandem with a variety of version control software. Choose your flavor. I favor the Git/Github variety in my day-to-day.  
+One of the beautiful things about Git is that you can either use it as a standalone package or you may use it in tandem with a variety of version control graphical clients. Choose your flavor. I favor the Git/Github variety in my day-to-day.  
 
 __2. Configure Git to Track Your Changes.__
 Configuring Git with your credentials allows Git to begin tracking changes made by you. That way, when changes are committed, they are added to a ledger of all updates made to a repository and linked to you. With `git log` and `git reflog`, you can see the who, when, and what regarding each change that was committed.
