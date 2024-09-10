@@ -1,38 +1,37 @@
 # Git/Github Cheat Sheet for For Slow Learners
 
-## Table of Contents
-[Setup](#setup) <a name="setup"></a>
-[Get Started](#get-started) <a name="get-started"></a>
-  [git init](#git-init) <a name="git-init"></a>
-  [git clone](#git-clone) <a name="git-clone"></a>
-[Basic Commands](#basic-commands) <a name="basic-commands"></a>
-  [git status](#git-status) <a name="git-status"></a>
-  [git branch](#git-branch) <a name="git-branch"></a>
-  [git checkout](#git-checkout) <a name="git-checkout"></a>
-  [git add](#git-add) <a name="git-add"></a>
-  [git commit](#git-commit) <a name="git-commit"></a>
-  [git remote](#git-remote) <a name="git-remote"></a>
-  [git push](#git-push) <a name="git-push"></a>
-  [git pull](#git-pull) <a name="git-pull"></a>
-  [git fetch](#git-fetch) <a name="git-fetch"></a>
-  [git merge](#git-merge) <a name="git-merge"></a>
-  [git diff](#git-diff) <a name="git-diff"></a>
-[Fixing Mistakes](#fixing-mistakes) <a name="fixing-mistakes"></a>
-  [git rm and git mv](#git-rm-git-mv) <a name="git-rm-git-mv"></a>
-  [git log](#git-log) <a name="git-log"></a>
-  [git reset](#git-reset) <a name="git-reset"></a>
-  [git clean](#git-clean) <a name="git-clean"></a>
-[Common Workflows](#common-workflows) <a name="common-workflows"></a>
-  [Add a remote](#add-a-remote) <a name="add-a-remote"></a>
-  [Delete remote](#delete-remote) <a name="delete-remote"></a>
-  [Push changes to GitHub](#push-changes-to-github) <a name="push-changes-to-github"></a>
-[Up Next](#up-next) <a name="up-next"></a>
-
----
-
 I selfishly created this cheat sheet for myself after trying to learn git for the _third_ time. I figure that in the future, if I need help remembering what I spent several painstaking hours to learn it would be in my best interest to document my findings. Hopefully, someone else out there finds this useful as well. :metal:
 
 For a tutorial, a buddy of mine recommended [this one](https://gitimmersion.com/index.html). Let's just say I trust this man with my life, so you can at least trust his judgment.
+
+## Table of Contents
+1. [Setup](#setup) <a name="setup"></a>
+2. [Get Started](#get-started) <a name="get-started"></a>
+    1. [Start Tracking Changes](#start-tracking-changes) <a name="start-tracking-changes"></a>
+        - [git init](#git-init) <a name="git-init"></a>
+        - [git clone](#git-clone) <a name="git-clone"></a>
+    2. [Basic Commands](#basic-commands) <a name="basic-commands"></a>
+        - [git status](#git-status) <a name="git-status"></a>
+        - [git branch](#git-branch) <a name="git-branch"></a>
+        - [git checkout](#git-checkout) <a name="git-checkout"></a>
+        - [git add](#git-add) <a name="git-add"></a>
+        - [git commit](#git-commit) <a name="git-commit"></a>
+        - [git remote](#git-remote) <a name="git-remote"></a>
+        - [git push](#git-push) <a name="git-push"></a>
+        - [git pull](#git-pull) <a name="git-pull"></a>
+        - [git fetch](#git-fetch) <a name="git-fetch"></a>
+        - [git merge](#git-merge) <a name="git-merge"></a>
+        - [git diff](#git-diff) <a name="git-diff"></a>
+    3. [Fixing Mistakes](#fixing-mistakes) <a name="fixing-mistakes"></a>
+        - [git rm and git mv](#git-rm-git-mv) <a name="git-rm-git-mv"></a>
+        - [git log](#git-log) <a name="git-log"></a>
+        - [git reset](#git-reset) <a name="git-reset"></a>
+        - [git clean](#git-clean) <a name="git-clean"></a>
+3. [Common Workflows](#common-workflows) <a name="common-workflows"></a>
+    1. [Add a remote](#add-a-remote) <a name="add-a-remote"></a>
+    2. [Delete remote](#delete-remote) <a name="delete-remote"></a>
+    3. [Push changes to GitHub](#push-changes-to-github) <a name="push-changes-to-github"></a>
+4. [Up Next](#up-next) <a name="up-next"></a>
 
 # Setup
 __1. Download git and choose your version control software.__ Grab the latest Git distribution from [their website](https://git-scm.com/). If you're on MacOS, you can use [brew](https://github.com/Homebrew) to download packages to your machine like I did. I am not here to recreate the wheel. A simple search on the web will return hundreds of resources that will walk you through git installation. Again, the way you do it will be up to you!
@@ -57,6 +56,7 @@ git config --global pager.branch false
 ```
 __NOTE__: If you choose to keep the default branch listing, then you can exit by typing in `-F` then `return`
 # Get Started
+## Start Tracking Changes
 ### git init
 _Start using git to start tracking a local repository and connect it to a remote repository in the future._
 
@@ -71,7 +71,7 @@ Create git repo in current directory
 git init <directory>
 ```
 ### git clone
-_Clone a repo to your local machine._
+_Clone a git repo to your local machine._
 ```
 git clone <GitHub-url> --- clone a repo to your local machine
 ```
@@ -243,7 +243,7 @@ Show the difference between staged changes and the last commit
 ```
 git diff --cached
 ```
-# Fixing Mistakes
+## Fixing Mistakes
 Made a mistake? Have no fear; not all hope is lost (yet). The beauty of version control is that you can track all of your past versions and retrieve lines of code or entire files. This can get really advanced, really fast. I suggest fixing your mistakes under the guidance and supervision of someone else who knows their way around Git. I'm speaking from experience and guaranteeing it will save you 50 hours of headaches.
 ### git rm and git mv
 _Do some spring cleaning and get rid of some files or move them around then commit them. Using this method, you can change the file structure or delete things from your project with the safety net of being able to roll back your changes with Git._
