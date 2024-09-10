@@ -86,12 +86,42 @@ Add all new files in the current directory to repo
 ```
 git add .
 ```
-### git commit
-_Let's save those changes baby!_
+Stage changes in hunks, interactively from the command line
+```
+git add -p
+# YOUR CODE HERE
+# (x/x) Stage this hunk [y,n,q,a,d,e,?]?
 
-Commit changes to the branch
+git add -p <filename>
+# YOUR CODE HERE
+# (x/x) Stage this hunk [y,n,q,a,d,/,j,J,g,s,e,?]?
+```
+**Possible Options**:
+`y` stage this hunk for the next commit
+`n` do not stage this hunk for the next commit
+`q` quit; do not stage this hunk or any of the remaining hunks
+`a` stage this hunk and all later hunks in the file
+`d` do not stage this hunk or any of the later hunks in the file
+`g` select a hunk to go to
+`/` search for a hunk matching the given regex
+`j` leave this hunk undecided, see next undecided hunk
+`J` leave this hunk undecided, see next hunk
+`k` leave this hunk undecided, see previous undecided hunk
+`K` leave this hunk undecided, see the previous hunk
+`s` split the current hunk into smaller hunks
+`e` manually edit the current hunk
+-----> NOTE: Edit the hunk manually by replacing `+`/`-` by `#`
+`?` print hunk help
+### git commit
+_Let's save those changes, baby!_
+
+Commit changes to the branch with an inline message instead of opening the terminal editor
 ```
 git commit -m "message goes here" 
+```
+Edit the commit message on your most recent commit to a branch (WARNING: I suggest using this if the original message was an inline message, not a multiline message)
+```
+git commit --amend -m "New message goes here" 
 ```
 ### git remote
 _Let's bridge the gap between the local repos and the ones that you have on Github._
