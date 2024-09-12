@@ -27,6 +27,8 @@ For a tutorial, a buddy of mine recommended [this one](https://gitimmersion.com/
         - [git log](#git-log) <a name="git-log"></a>
         - [git reset](#git-reset) <a name="git-reset"></a>
         - [git clean](#git-clean) <a name="git-clean"></a>
+    4. [Working Collaboratively](#working-collaboratively) <a name="working-collaboratively"></a>
+        - [git rebase](#git-rebase) <a name="git-rebase"></a>
 3. [Common Workflows](#common-workflows) <a name="common-workflows"></a>
     1. [Add a remote](#add-a-remote) <a name="add-a-remote"></a>
     2. [Delete remote](#delete-remote) <a name="delete-remote"></a>
@@ -297,6 +299,13 @@ git clean -n
 # Run the clean
 git clean -f
 ```
+# Working Collaboratively - TODO
+Git is a powerful tool because it allows us to code collaboratively with other people! Let's follow the steps to set up your local machine for collaboration. Before we get into the commands, fork a repository so you have a copy to work from ([tutorial](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)). Then, clone the repository using the command line on your local machine. Tada! Now you have a local copy and you can start making changes.
+
+```
+git remote add upstream <repo-URL>
+git fetch upstream
+```
 # Common Workflows
 So now you know the basics, what the heck can you actually do with all you've just learned? Let me walk you through some common workflows.
 ### Add a remote
@@ -315,13 +324,17 @@ So now you know the basics, what the heck can you actually do with all you've ju
 3. Send the changes from your local repo to the remote --- `git push <alias> <branch-name>` or `git push -u <alias>`
  
 # Up Next...
-- [ ] Workflow: add a repository
-- [x] add a branch
-- [x] merge branches
-- [x] quick tips
-- [ ] helpful videos
-- [ ] vocabulary (alias, branch, commit, remote, local, repo)
-- [ ] useful tags
+- [x] Workflow: Add a remote
+- [x] Workflow: Delete Remote
+- [x] Workflow: Push Changes to GitHub
+- [ ] Workflow: Add a repository
+- [ ] Workflow: Update your fork with changes from the original repo
+- [ ] Workflow: Add a branch
+- [ ] Workflow: Merge branches
+- [ ] Quick tips
+- [ ] Helpful videos
+- [ ] Vocabulary (alias, branch, commit, remote, local, repo)
+- [ ] Useful tags
 
 ## Questions or Comments?
 This is a resource not only for me but for you! If there is anything else that you think should be in here let me know. Feel free to raise an issue.
